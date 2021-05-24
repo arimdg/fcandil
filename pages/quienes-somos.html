@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Esta sección meta hace la web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estas son las keywords de la página para SEO, son diferentes para cada html -->
+    <meta name="keywords" content="fundación, adicciones, historia, misión, visión, objetivo">
+    <!-- Esta es la descripción de la página, es diferente para cada html-->
+    <meta name="description" content="Fundación Candil es una organización social sin fines de lucro, que se dedica al tratamiento de jóvenes y adultos afectados por la problemática de las adicciones">
+    <!-- Esto se ve en la solapa del navegador, es diferente para cada html -->
+    <title>Quiénes somos | Fundación Candil</title>
+    <!--Acá van los link de los estilos, primero el bootstrap, luego los propios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Acá va la hoja de estilos interna (no bootstrap)-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--fuente de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header con el primer div que es el logo con retorno y el top nav van en todas las páginas-->
+    <header>
+        <div class="cabecera">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light menu" style="background-color: #FBFDFA;">
+                <a class="navbar-brand menu__logo" href="../index.html">
+                    <img class="menu__logoImg" src="../assets/img/logo-fundacion.jpeg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--si a la clase le pongo "nav-item active" se pone más oscruo, para identificar la página en la que está-->
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/adiccion-y-tratamientos.html">Adicción y tratamientos</a>
+                        </li>
+                        <li class="nav-item dropdown menu__button">
+                            <a class="nav-link dropdown-toggle" href="../pages/programas.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programas y terapias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#rehabilitacion">Rehabilitación</a>
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#reinsercion">Reinserción</a>
+                            </div>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <br>
+    </header>
+    <br>
+    <section class="quienesSomos">
+        <h3>Quiénes somos</h3>
+        <p>Fundación Candil es una organización social sin fines de lucro, que desde el año 2001 se dedica al tratamiento de jóvenes y adultos afectados por la problemática de las adicciones. Esta es una de las pocas instituciones del país que trabajan con menores, con mujeres, con personas con causas judiciales y con residentes que tienen patologías duales: personas adictas con estructuras psiquiátricas de base.
+            <br>
+            <br>
+            Está compuesta por un equipo de más de 30 profesionales quienes trabajan en un grupo interdisciplinario integrado por médicos psiquiatras, médicos clínicos, psicólogos, asistentes sociales, operadores socio-terapéuticos, talleristas, coordinadores y administrativos.
+        </p>
+        <br>
+        <div class="mision">
+            <h4>Misión</h4>
+            <p>Realizar tratamientos de rehabilitación para que personas con problemas de adicciones puedan vivir sin drogas, y generar acciones de prevención, docencia e investigación en temas de dependencia.</p>
+        </div>
+        <br>
+        <div class="vision">
+            <h4>Visión</h4>
+            <p>Ser un referente de docencia e investigación de la prevención de drogas a nivel nacional e internacional, y del tratamiento de las adicciones.</p>
+        </div>
+        <br>
+        <div class="objetivos">
+            <h4>Objetivos</h4>
+            <ul>
+                <li>Realizar tratamientos de excelencia para lograr, en el residente, el restablecimiento de sus vínculos afectivos, la revalorización del trabajo y la recuperación del respeto de si mismo para que pueda llevar adelante un proyecto de vida sano</li>
+                <li>Trabajar en red con otras instituciones para lograr la reinserción social de los residentes</li>
+                <li>Generar campañas de prevención para reducir el consumo de drogas</li>
+                <li>Trabajar de forma mancomunada con la sociedad y los organismos públicos para erradicar el consumo de drogas en la comunidad</li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
+    <footer class="footer">
+        <a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx">
+        <img class="footer__img" src="../assets/img/data-fiscal.png" alt="data-fiscal"></a>
+        <a href="https://www.argentina.gob.ar/aaip/datospersonales">
+        <img class="footer__img" src="../assets/img/pdp.jpg" alt="proteccion-datos"></a>
+        <a href="https://www.argentina.gob.ar/jefatura/sedronar">
+        <img class="footer__img" src="../assets/img/presidencia-nacion.jpg" alt="sedronar"></a>
+        <a href="https://fonga.org.ar/">
+        <img class="footer__img" src="../assets/img/logo-fonga.jpg" alt="fonga"></a>
+    </footer>
+    
+    <!--acá va el cierre del bootstrap (js)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

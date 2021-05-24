@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- comentario: esta sección meta hace la web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estas son las keywords de la página para SEO, son diferentes para cada html -->
+    <meta name="keywords" content="fundación, adicciones, contacto, mail, ayuda">
+    <!-- Esta es la descripción de la página, es diferente para cada html-->
+    <meta name="description" content="Envianos tu consulta y te responderemos a la brevedad">
+    <!-- Esto se ve en la solapa del navegador, es diferente para cada html -->
+    <title>Contacto | Fundacion Candil</title>
+    <!--Acá van los link de los estilos, primero el bootstrap, luego los propios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Acá va la hoja de estilos interna (no bootstrap)-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--fuente de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header con el primer div que es el logo con retorno y el top nav van en todas las páginas-->
+    <header>
+        <div class="cabecera">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light menu" style="background-color: #FBFDFA;">
+                <a class="navbar-brand menu__logo" href="../index.html">
+                    <img class="menu__logoImg" src="../assets/img/logo-fundacion.jpeg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--si a la clase le pongo "nav-item active" se pone más oscruo, para identificar la página en la que está-->
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/adiccion-y-tratamientos.html">Adicción y tratamientos</a>
+                        </li>
+                        <li class="nav-item dropdown menu__button">
+                            <a class="nav-link dropdown-toggle" href="../pages/programas.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programas y terapias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#rehabilitacion">Rehabilitación</a>
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#reinsercion">Reinserción</a>
+                            </div>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <br>
+    </header>
+    <br>
+    <!--Contiene un formulario de contacto para las personas que quieran iniciar un tratamiento o consulta-->
+    <h3>Contacto</h3>
+    <p>Envianos tu consulta y te responderemos a la brevedad. Absoluta confidencialidad.</p>
+    <form class="form" action="form-result.php" method="post" enctype="multipart/form-data" id="contact">
+        <fieldset>
+            <legend class="from__title">Datos personales</legend>
+            <label for="nom">Nombre/s</label>
+            <input type="text" name="nom" placeholder="Ej. Maria" value="" required>
+            <br>
+            <label for="ape">Apellido/s</label>
+            <input type="text" name="ape" placeholder="Ej. Lopez Obrador" value="" required>
+            <br>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" placeholder="Entrada de correo" value="" required><br>
+            <label for="cel">Celular</label>
+            <input type="tel" name="cel" placeholder="Ej. 01162572195" required><br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" placeholder="Ej. 01143221068"><br>
+            <label for="pais">Pasí de residencia</label>
+            <input type="text" name="pais" placeholder="Ej. Argentina" required><br>
+            <label for="prov">Provincia</label>
+            <input type="text" name="prov" placeholder="Ej. Rio Negro">
+            <label for="local">Ciudad</label>
+            <input type="text" name="local" placeholder="Ej. Bariloche">
+        </fieldset><br><br>
+            <label for="contacto">¿Cómo nos conoció?</label><br>
+            <input type="radio" name="contacto" id="op1" value="internet"><label for="op1">Internet</label><br>
+            <input type="radio" name="contacto" id="op2" value="nota"><label for="op2">Prensa o redes sociales</label><br>
+            <input type="radio" name="contacto" id="op3" value="prof"><label for="op3">A través de un profesional de la salud</label><br>
+            <input type="radio" name="contacto" id="op4" value="recom"><label for="op4">Me recomendó un amigo/conocido</label><br>
+            <input type="radio" name="contacto" id="op5" value="otro"><label for="op5">Otro</label><br><br>
+            <label for="coment">Consulta</label><br>
+            <textarea name="coment" id="comentario" cols="100" rows="10">Dejanos tu consulta</textarea><br>
+            <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <br>
+    <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
+    <footer class="footer">
+        <a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx">
+        <img class="footer__img" src="../assets/img/data-fiscal.png" alt="data-fiscal"></a>
+        <a href="https://www.argentina.gob.ar/aaip/datospersonales">
+        <img class="footer__img" src="../assets/img/pdp.jpg" alt="proteccion-datos"></a>
+        <a href="https://www.argentina.gob.ar/jefatura/sedronar">
+        <img class="footer__img" src="../assets/img/presidencia-nacion.jpg" alt="sedronar"></a>
+        <a href="https://fonga.org.ar/">
+        <img class="footer__img" src="../assets/img/logo-fonga.jpg" alt="fonga"></a>
+    </footer>
+    
+    <!--acá va el cierre del bootstrap (js)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

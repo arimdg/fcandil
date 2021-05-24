@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- comentario: esta sección meta hace la web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estas son las keywords de la página para SEO, son diferentes para cada html -->
+    <meta name="keywords" content="fundación, adicciones, actividades, programas, talleres, deportes">
+    <!-- Esta es la descripción de la página, es diferente para cada html-->
+    <meta name="description" content="En la fundación se realizan actividades diarias de recreación y terapias que ayudan a la rehabilitación de de los pacientes">
+    <!-- Esto se ve en la solapa del navegador, es diferente para cada html -->
+    <title>Actividades | Fundación Candil</title>
+    <!--Acá van los link de los estilos, primero el bootstrap, luego los propios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Acá va la hoja de estilos interna (no bootstrap)-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--fuente de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header con el primer div que es el logo con retorno y el top nav van en todas las páginas-->
+    <header>
+        <div class="cabecera">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light menu" style="background-color: #FBFDFA;">
+                <a class="navbar-brand menu__logo" href="../index.html">
+                    <img class="menu__logoImg" src="../assets/img/logo-fundacion.jpeg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--si a la clase le pongo "nav-item active" se pone más oscruo, para identificar la página en la que está-->
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/adiccion-y-tratamientos.html">Adicción y tratamientos</a>
+                        </li>
+                        <li class="nav-item dropdown menu__button">
+                            <a class="nav-link dropdown-toggle" href="../pages/programas.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programas y terapias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#rehabilitacion">Rehabilitación</a>
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#reinsercion">Reinserción</a>
+                            </div>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <br>
+    </header>
+    <br>
+    <section class="actividades">
+        <h3 class="actividades__title" id="activ">Actividades que se realizan</h3>
+        <br>
+        <p class="actividades__text">En la fundación se realizan actividades diarias de recreación y terapias que ayudan a la rehabilitación de de las personas.</p>
+        <br>
+        <table class="actividades__tabla">
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>8:00-9:00</td>
+                <td>Desayuno</td>
+                <td>Desayuno</td>
+                <td>Desayuno</td>
+                <td>Desayuno</td>
+                <td>Desayuno</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td>
+                <td>Taller de panadería</td>
+                <td>Actividades en la huerta</td>
+                <td>Taller de carpintería</td>
+                <td>Actividades en la huerta</td>
+                <td>Limpieza de cuartos</td>
+                <td>Desayuno</td>
+                <td>Desayuno</td>
+            </tr>
+            <tr>
+                <td>10:00-11:00</td>
+                <td>Taller de panadería</td>
+                <td>Actividades en la huerta</td>
+                <td>Taller de carpintería</td>
+                <td>Actividades en la huerta</td>
+                <td>Limpieza de cuartos</td>
+                <td>Recreación al aire libre</td>
+                <td>Recreación al aire libre</td>
+            </tr>
+            <tr>
+                <td>11:00-12:00</td>
+                <td>Limpieza de espacios comunes</td>
+                <td>Actividad recretiva</td>
+                <td>Taller de carpintería</td>
+                <td>Actividad recretiva</td>
+                <td>Taller de computación</td>
+                <td>Recreación al aire libre</td>
+                <td>Recreación al aire libre</td>
+            </tr>
+            <tr>
+                <td>12:00-13:00</td>
+                <td>Limpieza de espacios comunes</td>
+                <td>Actividad recretiva</td>
+                <td>Taller de carpintería</td>
+                <td>Actividad recretiva</td>
+                <td>Taller de computación</td>
+                <td>Recreación al aire libre</td>
+                <td>Recreación al aire libre</td>
+            </tr>
+            <tr>
+                <td>13:00-14:00</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+            </tr>
+            <tr>
+                <td>14:00-15:00</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+                <td>Almuerzo</td>
+            </tr>
+            <tr>
+                <td>15:00-16:00</td>
+                <td>Actividades en la huerta</td>
+                <td>Taller de pintura</td>
+                <td>Actividades en la huerta</td>
+                <td>Terapias grupale e individuales</td>
+                <td>Visita familiar</td>
+                <td>Taller de literatura</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>16:00-17:00</td>
+                <td>Actividades en la huerta</td>
+                <td>Taller de pintura</td>
+                <td>Actividades en la huerta</td>
+                <td>Terapias grupale e individuales</td>
+                <td>Visita familiar</td>
+                <td>Taller de literatura</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>17:00-18:00</td>
+                <td>Actividades en la huerta</td>
+                <td>Taller de pintura</td>
+                <td>Actividades en la huerta</td>
+                <td>Terapias grupale e individuales</td>
+                <td>Visita familiar</td>
+                <td>Taller de literatura</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>19:00-20:00</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+                <td>Baño y descanso</td>
+            </tr>
+            <tr>
+                <td>20:00-21:00</td>
+                <td>Cena</td>
+                <td>Cena</td>
+                <td>Cena</td>
+                <td>Cena</td>
+                <td>Cena</td>
+                <td>Cena</td>
+                <td>Cena</td>
+            </tr>
+            <tr>
+                <td>21:00-22:00</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+                <td>Baño y cierre del dia</td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <br>
+    <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
+    <footer class="footer">
+        <a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx">
+        <img class="footer__img" src="../assets/img/data-fiscal.png" alt="data-fiscal"></a>
+        <a href="https://www.argentina.gob.ar/aaip/datospersonales">
+        <img class="footer__img" src="../assets/img/pdp.jpg" alt="proteccion-datos"></a>
+        <a href="https://www.argentina.gob.ar/jefatura/sedronar">
+        <img class="footer__img" src="../assets/img/presidencia-nacion.jpg" alt="sedronar"></a>
+        <a href="https://fonga.org.ar/">
+        <img class="footer__img" src="../assets/img/logo-fonga.jpg" alt="fonga"></a>
+    </footer>
+    
+    <!--acá va el cierre del bootstrap (js)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

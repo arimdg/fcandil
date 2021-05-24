@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- comentario: esta sección meta hace la web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estas son las keywords de la página para SEO, son diferentes para cada html -->
+    <meta name="keywords" content="fundación, adicciones, equipo, curriculum, staff">
+    <!-- Esta es la descripción de la página, es diferente para cada html-->
+    <meta name="description" content="Estas son las personas que trabajan día a día con nuestros pacientes para brindarles el mejor tratamiento posible. No te pierdas la posibilidad de formar parte del equipo">
+    <!-- Esto se ve en la solapa del navegador, es diferente para cada html -->
+    <title>Equipo | Fundacion Candil</title>
+    <!--Acá van los link de los estilos, primero el bootstrap, luego los propios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Acá va la hoja de estilos interna (no bootstrap)-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--fuente de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--El header con el primer div que es el logo con retorno y el top nav van en todas las páginas-->
+    <header>
+        <div class="cabecera">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light menu" style="background-color: #FBFDFA;">
+                <a class="navbar-brand menu__logo" href="../index.html">
+                    <img class="menu__logoImg" src="../assets/img/logo-fundacion.jpeg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--si a la clase le pongo "nav-item active" se pone más oscruo, para identificar la página en la que está-->
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/adiccion-y-tratamientos.html">Adicción y tratamientos</a>
+                        </li>
+                        <li class="nav-item dropdown menu__button">
+                            <a class="nav-link dropdown-toggle" href="../pages/programas.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programas y terapias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#rehabilitacion">Rehabilitación</a>
+                            <a class="dropdown-item menu__button--dropdown" href="../pages/programas.html#reinsercion">Reinserción</a>
+                            </div>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item menu__button">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <br>
+    </header>
+    <br>
+    <!--Sección del equipo que trabaja en la fundación-->
+    <section class="lista">
+        <h3>Nuestro equipo</h3>
+        <p>Este es el equipo que trabaja día a día en nuestra sede para brindar la mejor atención a nuestros pacientes</p>
+        <ul>
+            <li> <strong>Directora General</strong><br>Lic. Graciela Ojeda</li>
+            <br>
+            <li> <strong> Coordinadora  Operativa </strong> <br> Betina Vega</li>
+            <br>
+            <li> <strong> Director de Asistencia </strong> <br> Lic. Manuel Diaz</li> <br>
+            <li> <strong> Director Medico </strong><br>Dr. Damian Martinez</li><br>
+            <li> <strong> Medico </strong> <br>Dra. Lucia Martinez</li> <br>
+            <li> <strong> Psicologos </strong>
+                <ul>
+                    <li>Lic. Eduardo Chiariano</li>
+                    <li>Lic. Diego Mandaradoni</li>
+                    <li>Lic. Ignacio Granara</li>
+                    <li>Lic. Jorgelina Tonieti</li>
+                    <li>Lic. Yanina Fiorenza</li>
+                </ul>
+            </li><br>
+            <li> <strong> Taller de comutación </strong> <br>Malva Lollo</li><br>
+            <li> <strong> Operadores </strong>
+                <ul>
+                    <li>Alberto Ubarni</li>
+                    <li>Mariel Cerato</li>
+                    <li>Gladys Dominguez</li>
+                    <li>Camila Crocetti</li>
+                    <li>Mariana Otarola</li>
+                    <li>Fiorella Maduri</li>
+                </ul>
+            </li><br>
+            <li> <strong> Taller de teatro </strong> <br>Andrea Gonzalez</li><br>
+            <li> <strong> Administración </strong> <br>Luis Olleta</li><br>
+            <li> <strong> Contaduria </strong> <br>Dr. Andrea Arce</li><br>
+            <li> <strong> Cocina </strong> <br>Mirta Legal</li><br>
+            <li> <strong> Mantenimiento </strong> <br>Oscar Perea</li>
+        </ul>
+    </section>
+    <br>
+    <br>
+    <!--Formulario de contacto para gente que quiere trabajar en la fundación. Falta definir a donde dirige el acction-->
+    <h3>Sumate al equipo</h3>
+    <p>No dudes en mandarnos tu curriculum vitae, para poder formar parte de un equipo que cambia realmente la vida de las personas</p>
+    <form action="form-result.php" method="post" enctype="multipart/form-data" id="formcv" class="form">
+        <fieldset>
+            <legend class="form_title"> <strong> Datos personales </strong></legend>
+            <label for="nom">Nombre/s</label>
+            <input type="text" name="nom" placeholder="Ej. Maria" value="" required>
+            <br>
+            <label for="ape">Apellido/s</label>
+            <input type="text" name="ape" placeholder="Ej. Lopez Obrador" value="" required>
+            <br>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" placeholder="Entrada de correo" value="" required><br>
+            <label for="cel">Celular</label>
+            <input type="tel" name="cel" placeholder="Ej. 01162572195" required><br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" placeholder="Ej. 01143221068">
+        </fieldset><br>
+        <fieldset>
+            <legend class="form_title"> <strong> Educación</strong></legend>
+            <label for="estudios">¿Qué nivel de estudio tenés?</label><br>
+            <input type="radio" name="estudios" id="estudios1" value="primario"><label for="estudios1">Primario</label><br>
+            <input type="radio" name="estudios" id="estudios2" value="secundario"><label for="estudios2">Secundario</label><br>
+            <input type="radio" name="estudios" id="estudios3" value="universitario"><label for="estudios3">Universitario</label><br>
+            <input type="radio" name="estudios" id="estudios4" value="superior"><label for="estudios4">Superior</label><br>
+            <input type="radio" name="estudios" id="estudios5" value="otro"><label for="estudios5">Otros</label><br>
+        </fieldset><br>    
+            <label for="adj">Adjunta tu CV</label>
+            <input type="file" name="adj" accept=".txt, .doc, .pdf" required><br><br>
+            <input type="submit" value="Enviar CV">
+    </form>
+    <br>
+    <br>
+    <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
+    <footer class="footer">
+        <a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx">
+        <img class="footer__img" src="../assets/img/data-fiscal.png" alt="data-fiscal"></a>
+        <a href="https://www.argentina.gob.ar/aaip/datospersonales">
+        <img class="footer__img" src="../assets/img/pdp.jpg" alt="proteccion-datos"></a>
+        <a href="https://www.argentina.gob.ar/jefatura/sedronar">
+        <img class="footer__img" src="../assets/img/presidencia-nacion.jpg" alt="sedronar"></a>
+        <a href="https://fonga.org.ar/">
+        <img class="footer__img" src="../assets/img/logo-fonga.jpg" alt="fonga"></a>
+    </footer>
+    
+    <!--acá va el cierre del bootstrap (js)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

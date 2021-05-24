@@ -1,0 +1,203 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Estilo general para todas las páginas*/
+body {
+  display: grid;
+  background-color: #ffffff;
+  font-family: Poppins;
+  padding-top: 150px; }
+
+/*Estilos del header + menu. aplican a todas las páginas del sitio*/
+a {
+  text-decoration: none;
+  color: #a13049; }
+
+header {
+  width: 100%;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #f7d4cf, #ffffff); }
+
+.info {
+  text-align: left; }
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+/*Esta clase aplica al logo que funciona de ancla interna, es con el que se vuelve al inicio*/
+.menu__logoImg {
+  height: 100px;
+  width: 100px; }
+
+/*Esta es la clase del BigBanner*/
+.slider {
+  height: 200px;
+  width: 100%; }
+
+/*Esto es el estilo de las imagenes de las redes sociales que se encuentran en el index*/
+.SM__img {
+  height: 40px;
+  width: 40px; }
+
+.SM {
+  text-align: center; }
+
+/*Estilo del footer -> aplica a todas las paginas del sitio*/
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to top, #f7d4cf, #ffffff); }
+
+.footer__img {
+  height: 75px;
+  margin: 10px; }
+
+h1 {
+  color: #488621;
+  font-weight: bold;
+  font-family: Poppins; }
+
+h2 {
+  color: #ED9820;
+  font-family: serif; }
+
+.actividades__tabla {
+  table-layout: fixed;
+  width: 100%;
+  border: 3px solid black; }
+
+fieldset {
+  display: inline-block; }
+
+/*Estilos de las 3 secciones que se encuentran en el index. Podrían ser luego utilizados en otras páginas*/
+.cuerpo__texto {
+  text-align: center;
+  animation-name: aparecer;
+  animation-iteration-count: linear;
+  animation-duration: 3s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+/*Estilos para la página quienes somos*/
+.quienesSomos {
+  margin: 15px; }
+
+.objetivos li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 20px; }
+
+/*Estos son los estilos de la página de adiccion*/
+.adiccion {
+  margin: 15px; }
+
+/*Estilos de la página "programas"*/
+#rehabilitacion {
+  display: grid;
+  margin: 5px;
+  grid-template-areas: "titulo"  "programa" "internacion"  "hospital"  "ambulatorio";
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px; }
+
+.titulo {
+  grid-area: titulo; }
+
+.programa {
+  grid-area: programa; }
+
+.internacion {
+  grid-area: internacion; }
+
+.hospital {
+  grid-area: hospital; }
+
+.ambulatorio {
+  grid-area: ambulatorio; }
+
+#reinsercion {
+  margin: 50px; }
+
+/*Estos son los estilos de la página de actividades*/
+.actividades {
+  margin: 15px; }
+
+/*Estos son los estilos de la página de equipo*/
+.lista {
+  position: relative;
+  left: 20px; }
+  .lista ul {
+    list-style-type: none;
+    list-style-position: inside; }
+    .lista ul li ul li {
+      list-style-type: initial;
+      column-count: initial; }
+
+.form {
+  position: relative;
+  left: 20px; }
+
+/*Parte responsive -> mediaqueris para tablets*/
+@media only screen and (min-width: 768px) {
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; }
+  .slider {
+    height: 400px;
+    width: 100%; }
+  .lista ul {
+    list-style-type: none;
+    list-style-position: inside;
+    column-count: 2; }
+    .lista ul li ul {
+      column-count: 1; }
+  #rehabilitacion {
+    display: grid;
+    margin: 5px;
+    grid-template-areas: "titulo titulo titulo"  "programa programa programa" "internacion hospital ambulatorio";
+    grid-template-rows: 20% auto 40%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px; } }
+
+/*Parte responsive -> mediaqueris para desktop*/
+@media only screen and (min-width: 1024px) {
+  .info {
+    text-align: right;
+    font-family: Poppins; }
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+  .slider {
+    height: 500px;
+    width: 100%; }
+  #rehabilitacion {
+    display: grid;
+    margin: 15px;
+    grid-template-areas: "titulo titulo titulo"  "programa programa programa" "internacion hospital ambulatorio";
+    grid-template-rows: 15% auto 40%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px; } }
