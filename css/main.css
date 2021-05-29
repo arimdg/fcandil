@@ -27,8 +27,10 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: large;
+  font-weight: bold; }
 
 /*Esta clase aplica al logo que funciona de ancla interna, es con el que se vuelve al inicio*/
 .menu__logoImg {
