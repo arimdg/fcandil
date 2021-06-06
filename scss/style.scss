@@ -38,10 +38,10 @@ header {
 
 .cabecera{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     font-size: large;
     font-weight: bold;
 }
@@ -79,6 +79,14 @@ header {
 .footer__img {
     height: 75px;
     margin: 10px;
+}
+
+.footer__title {
+    font-weight: bold;
+}
+
+.footer__info {
+    font-size: small;
 }
 
 h1{

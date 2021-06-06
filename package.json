@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arimdg/fcandil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arimdg/fcandil/issues"
+  },
+  "homepage": "https://github.com/arimdg/fcandil#readme",
   "description": ""
 }
