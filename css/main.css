@@ -25,10 +25,10 @@ header {
 
 .cabecera {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: large;
   font-weight: bold; }
 
@@ -72,7 +72,7 @@ header {
 h1 {
   color: #488621;
   font-weight: bold;
-  font-family: Poppins; }
+  font-family: Hind Siliguri; }
 
 h2 {
   color: #ED9820;
@@ -169,6 +169,18 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; }
+  .cabecerea__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    font-size: large;
+    font-weight: bold; }
   .slider {
     height: 400px;
     width: 100%; }
@@ -198,6 +210,18 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center; }
+  .cabecerea__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    font-size: large;
+    font-weight: bold; }
   .slider {
     height: 500px;
     width: 100%; }

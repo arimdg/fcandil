@@ -38,10 +38,10 @@ header {
 
 .cabecera{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-size: large;
     font-weight: bold;
 }
@@ -92,7 +92,7 @@ header {
 h1{
     color: $green;
     font-weight: bold;
-    font-family: $main-font;
+    font-family: $title-font;
 }
 
 h2{
@@ -229,6 +229,20 @@ fieldset {
         align-items: center;
     }
     
+    .cabecerea__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+        font-size: large;
+        font-weight: bold;
+    }
+
     .slider{
         @include sizes(400px, 100%)
     }
@@ -275,6 +289,20 @@ fieldset {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .cabecerea__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+        font-size: large;
+        font-weight: bold;
     }
 
     .slider{
