@@ -24,6 +24,7 @@ body{
 a {
     text-decoration: none;
     color: $wine;
+    font: $title-font;
 }
 
 header {
@@ -97,7 +98,11 @@ h1{
 
 h2{
     color: $orange;
-    font-family: serif;
+}
+
+h3 {
+    font-family: $title-font;
+    font-size: xx-large;
 }
 
 .actividades__tabla {
@@ -229,20 +234,6 @@ fieldset {
         align-items: center;
     }
     
-    .cabecerea__menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
-        text-align: right;
-        font-size: large;
-        font-weight: bold;
-    }
-
     .slider{
         @include sizes(400px, 100%)
     }
@@ -289,20 +280,6 @@ fieldset {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .cabecerea__menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
-        text-align: right;
-        font-size: large;
-        font-weight: bold;
     }
 
     .slider{

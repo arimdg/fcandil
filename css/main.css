@@ -13,7 +13,8 @@ body {
 /*Estilos del header + menu. aplican a todas las páginas del sitio*/
 a {
   text-decoration: none;
-  color: #a13049; }
+  color: #a13049;
+  font: Hind Siliguri; }
 
 header {
   width: 100%;
@@ -75,8 +76,11 @@ h1 {
   font-family: Hind Siliguri; }
 
 h2 {
-  color: #ED9820;
-  font-family: serif; }
+  color: #ED9820; }
+
+h3 {
+  font-family: Hind Siliguri;
+  font-size: xx-large; }
 
 .actividades__tabla {
   table-layout: fixed;
@@ -169,18 +173,6 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; }
-  .cabecerea__menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    text-align: right;
-    font-size: large;
-    font-weight: bold; }
   .slider {
     height: 400px;
     width: 100%; }
@@ -210,18 +202,6 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center; }
-  .cabecerea__menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    text-align: right;
-    font-size: large;
-    font-weight: bold; }
   .slider {
     height: 500px;
     width: 100%; }
