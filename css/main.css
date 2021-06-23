@@ -8,7 +8,7 @@ body {
   display: grid;
   background-color: #ffffff;
   font-family: Poppins;
-  padding-top: 150px; }
+  padding-top: 75px; }
 
 /*Estilos del header + menu. aplican a todas las páginas del sitio*/
 a {
@@ -35,8 +35,8 @@ header {
 
 /*Esta clase aplica al logo que funciona de ancla interna, es con el que se vuelve al inicio*/
 .menu__logoImg {
-  height: 100px;
-  width: 100px; }
+  height: 75px;
+  width: 75px; }
 
 /*Esta es la clase del BigBanner*/
 .slider {
@@ -54,7 +54,7 @@ header {
 /*Estilo del footer -> aplica a todas las paginas del sitio*/
 .footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -84,8 +84,7 @@ h3 {
 
 .actividades__tabla {
   table-layout: fixed;
-  width: 100%;
-  border: 3px solid black; }
+  width: 100%; }
 
 fieldset {
   display: inline-block; }
@@ -189,7 +188,14 @@ fieldset {
     grid-template-rows: 20% auto 40%;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 5px;
-    grid-column-gap: 5px; } }
+    grid-column-gap: 5px; }
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #f7d4cf, #ffffff); } }
 
 /*Parte responsive -> mediaqueris para desktop*/
 @media only screen and (min-width: 1024px) {
@@ -212,4 +218,11 @@ fieldset {
     grid-template-rows: 15% auto 40%;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 5px;
-    grid-column-gap: 5px; } }
+    grid-column-gap: 5px; }
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #f7d4cf, #ffffff); } }

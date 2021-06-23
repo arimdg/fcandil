@@ -17,7 +17,7 @@ body{
     display: grid;
     background-color: $white;
     font-family: $main-font;
-    padding-top: 150px;
+    padding-top: 75px;
 }
 
 /*Estilos del header + menu. aplican a todas las páginas del sitio*/
@@ -50,7 +50,7 @@ header {
 
 /*Esta clase aplica al logo que funciona de ancla interna, es con el que se vuelve al inicio*/
 .menu__logoImg {
-    @include sizes(100px, 100px)
+    @include sizes(75px, 75px)
 }
 
 /*Esta es la clase del BigBanner*/
@@ -70,7 +70,7 @@ header {
 /*Estilo del footer -> aplica a todas las paginas del sitio*/
 .footer {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -108,7 +108,6 @@ h3 {
 .actividades__tabla {
     table-layout: fixed;
     width: 100%;
-    border: 3px solid black;
 }
 
 fieldset {
@@ -264,6 +263,14 @@ fieldset {
         grid-column-gap: 5px;
     }
     
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(to top, $pink, $white);
+    }
 }
 
 
@@ -298,5 +305,13 @@ fieldset {
         grid-column-gap: 5px;
     }
     
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(to top, $pink, $white);
+    }
 }
 

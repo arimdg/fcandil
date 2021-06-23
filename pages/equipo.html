@@ -73,7 +73,7 @@
     </header>
     <br>
     <!--Sección del equipo que trabaja en la fundación-->
-    <section class="lista">
+    <section class="lista container">
         <h3>Nuestro equipo</h3>
         <p>Este es el equipo que trabaja día a día en nuestra sede para brindar la mejor atención a nuestros pacientes</p>
         <ul>
@@ -114,38 +114,66 @@
     <br>
     <br>
     <!--Formulario de contacto para gente que quiere trabajar en la fundación. Falta definir a donde dirige el acction-->
-    <h3>Sumate al equipo</h3>
-    <p>No dudes en mandarnos tu curriculum vitae, para poder formar parte de un equipo que cambia realmente la vida de las personas</p>
-    <form action="form-result.php" method="post" enctype="multipart/form-data" id="formcv" class="form">
-        <fieldset>
-            <legend class="form_title"> <strong> Datos personales </strong></legend>
-            <label for="nom">Nombre/s</label>
-            <input type="text" name="nom" placeholder="Ej. Maria" value="" required>
-            <br>
-            <label for="ape">Apellido/s</label>
-            <input type="text" name="ape" placeholder="Ej. Lopez Obrador" value="" required>
-            <br>
-            <label for="correo">Correo electrónico</label>
-            <input type="email" name="correo" placeholder="Entrada de correo" value="" required><br>
-            <label for="cel">Celular</label>
-            <input type="tel" name="cel" placeholder="Ej. 01162572195" required><br>
-            <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" placeholder="Ej. 01143221068">
-        </fieldset><br>
-        <fieldset>
-            <legend class="form_title"> <strong> Educación</strong></legend>
-            <label for="estudios">¿Qué nivel de estudio tenés?</label><br>
-            <input type="radio" name="estudios" id="estudios1" value="primario"><label for="estudios1">Primario</label><br>
-            <input type="radio" name="estudios" id="estudios2" value="secundario"><label for="estudios2">Secundario</label><br>
-            <input type="radio" name="estudios" id="estudios3" value="universitario"><label for="estudios3">Universitario</label><br>
-            <input type="radio" name="estudios" id="estudios4" value="superior"><label for="estudios4">Superior</label><br>
-            <input type="radio" name="estudios" id="estudios5" value="otro"><label for="estudios5">Otros</label><br>
-        </fieldset><br>    
-            <label for="adj">Adjunta tu CV</label>
-            <input type="file" name="adj" accept=".txt, .doc, .pdf" required><br><br>
-            <input type="submit" value="Enviar CV">
-    </form>
-    <br>
+    <div class="container">
+        <h3>Sumate al equipo</h3>
+        <p>No dudes en mandarnos tu curriculum vitae, para poder formar parte de un equipo que cambia realmente la vida de las personas</p>
+        <form action="form-result.php" method="post" enctype="multipart/form-data" id="formcv" class="form">
+                <legend class="form_title"> <strong> Datos personales </strong></legend>
+                <div class="row mb-3">
+                    <label for="nom" class="col-sm-2 col-form-label">Nombre/s</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nom" placeholder="Ej. Maria" value="" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="ape" class="col-sm-2 col-form-label">Apellido/s</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="ape" placeholder="Ej. Lopez Obrador" value="" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="correo" class="col-sm-2 col-form-lable">Correo electrónico</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="correo" placeholder="Entrada de correo" value="" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="cel" class="col-sm-2 col-form-lable">Celular</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" name="cel" placeholder="Ej. 01162572195" required>
+                    </div>
+                </div>
+                <legend class="form_title"> <strong> Educación</strong></legend>
+                <fieldset class="row">
+                    <legend class="col-form-lable col-sm-6">¿Qué nivel de estudio tenés?</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estudios" id="estudios1" value="primario">
+                            <label class="form-check-lable" for="estudios1">Primario</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estudios" id="estudios2" value="secundario">
+                            <label class="form-check-lable" for="estudios2">Secundario</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estudios" id="estudios3" value="universitario">
+                            <label class="form-check-lable" for="estudios3">Universitario</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estudios" id="estudios4" value="superior">
+                            <label class="form-check-lable" for="estudios4">Superior</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estudios" id="estudios5" value="otro">
+                            <label class="form-check-lable" for="estudios5">Otros</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <label for="adj">Adjunta tu CV</label>
+                <input type="file" class="btn" name="adj" accept=".txt, .doc, .pdf" required><br><br>
+                <input type="submit" class="btn" value="Enviar CV">
+        </form>
+    </div>
     <br>
     <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
     <footer class="footer">

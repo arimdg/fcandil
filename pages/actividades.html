@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--Acá va la hoja de estilos interna (no bootstrap)-->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css">
     <!--fuente de google-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
@@ -77,151 +76,103 @@
         <br>
         <p class="actividades__text">En la fundación se realizan actividades diarias de recreación y terapias que ayudan a la rehabilitación de de las personas.</p>
         <br>
-        <div>
-            <table class="table table-sm actividades__tabla">
+        <div class="table-responsive">
+            <table class="table table-sm align-middle actividades__tabla">
                 <thead>
                     <tr>
-                    <th scope="col">Hora</th>
-                    <th scope="col">Lunes</th>
-                    <th scope="col">Martes</th>
-                    <th scope="col">Miércoles</th>
-                    <th scope="col">Jueves</th>
-                    <th scope="col">Viernes</th>
-                    <th scope="col">Sábado</th>
-                    <th scope="col">Domingo</th>
+                    <th scope="col">Dia</th>
+                    <th scope="col">8:00-9:00</th>
+                    <th scope="col">9:00-10:00</th>
+                    <th scope="col">10:00-11:00</th>
+                    <th scope="col">11:00-12:00</th>
+                    <th scope="col">12:00-13:00</th>
+                    <th scope="col">13:00-14:00</th>
+                    <th scope="col">14:00-15:00</th>
+                    <th scope="col">15:00-16:00</th>
+                    <th scope="col">16:00-17:00</th>
+                    <th scope="col">17:00-18:00</th>
+                    <th scope="col">18:00-19:00</th>
+                    <th scope="col">19:00-20:00</th>
+                    <th scope="col">20:00-21:00</th>
+                    <th scope="col">21:00-22:00</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">8:00-9:00</th>
+                        <th scope="row">Lunes</th>
                         <td>Desayuno</td>
+                        <td colspan="2">Taller de panadería</td>
+                        <td colspan="2">Limpieza de áreas comunes</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Actividades en la huerta</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Martes</th>
                         <td>Desayuno</td>
+                        <td colspan="2">Actividades en la huerta</td>
+                        <td colspan="2">Actividad recreativa</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Taller de pintura</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Miercoles</th>
                         <td>Desayuno</td>
+                        <td colspan="4">Taller de carpintería</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Actividades en la huerta</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jueves</th>
                         <td>Desayuno</td>
+                        <td colspan="2">Actividades en la huerta</td>
+                        <td colspan="2">Actividad recretiva</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Terapias grupales e individuales</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Viernes</th>
                         <td>Desayuno</td>
+                        <td colspan="2">Limpieza de dormitorios</td>
+                        <td colspan="2">Taller de computación</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Visita familiar</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sábado</th>
                         <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9:00-10:00</th>
-                        <td>Taller de panadería</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Taller de carpintería</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Limpieza de cuartos</td>
                         <td>Desayuno</td>
+                        <td colspan="3">Recreación al aire libre</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">Taller de literatura</td>
+                        <td colspan="2">Baño y descanso</td>
+                        <td>Cena</td>
+                        <td>Cierre del día</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Domingo</th>
+                        <td>-</td>
                         <td>Desayuno</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10:00-11:00</th>
-                        <td>Taller de panadería</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Taller de carpintería</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Limpieza de cuartos</td>
-                        <td>Recreación al aire libre</td>
-                        <td>Recreación al aire libre</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">11:00-12:00</th>
-                        <td>Limpieza de espacios comunes</td>
-                        <td>Actividad recretiva</td>
-                        <td>Taller de carpintería</td>
-                        <td>Actividad recretiva</td>
-                        <td>Taller de computación</td>
-                        <td>Recreación al aire libre</td>
-                        <td>Recreación al aire libre</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">12:00-13:00</th>
-                        <td>Limpieza de espacios comunes</td>
-                        <td>Actividad recretiva</td>
-                        <td>Taller de carpintería</td>
-                        <td>Actividad recretiva</td>
-                        <td>Taller de computación</td>
-                        <td>Recreación al aire libre</td>
-                        <td>Recreación al aire libre</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">13:00-14:00</th>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">14:00-15:00</th>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                        <td>Almuerzo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">15:00-16:00</th>
-                        <td>Actividades en la huerta</td>
-                        <td>Taller de pintura</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Terapias grupale e individuales</td>
-                        <td>Visita familiar</td>
-                        <td>Taller de literatura</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16:00-17:00</th>
-                        <td>Actividades en la huerta</td>
-                        <td>Taller de pintura</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Terapias grupale e individuales</td>
-                        <td>Visita familiar</td>
-                        <td>Taller de literatura</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">17:00-18:00</th>
-                        <td>Actividades en la huerta</td>
-                        <td>Taller de pintura</td>
-                        <td>Actividades en la huerta</td>
-                        <td>Terapias grupale e individuales</td>
-                        <td>Visita familiar</td>
-                        <td>Taller de literatura</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">19:00-20:00</th>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                        <td>Baño y descanso</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">20:00-21:00</th>
+                        <td colspan="3">Recreación al aire libre</td>
+                        <td colspan="2">Almuerzo</td>
+                        <td colspan="3">-</td>
+                        <td colspan="2">Baño y descanso</td>
                         <td>Cena</td>
-                        <td>Cena</td>
-                        <td>Cena</td>
-                        <td>Cena</td>
-                        <td>Cena</td>
-                        <td>Cena</td>
-                        <td>Cena</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">21:00-22:00</th>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                        <td>Cierre del dia</td>
-                    </tr>
+                        <td>Cierre del día</td>
                 </tbody>
             </table>
         </div>

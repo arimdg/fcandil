@@ -73,40 +73,68 @@
     </header>
     <br>
     <!--Contiene un formulario de contacto para las personas que quieran iniciar un tratamiento o consulta-->
-    <h3>Contacto</h3>
-    <p>Envianos tu consulta. Te responderemos a la brevedad con absoluta confidencialidad.</p>
-    <form class="form" action="form-result.php" method="post" enctype="multipart/form-data" id="contact">
-        <fieldset>
-            <legend class="from__title">Datos personales</legend>
-            <label for="nom">Nombre/s</label>
-            <input type="text" name="nom" placeholder="Ej. Maria" value="" required>
-            <br>
-            <label for="ape">Apellido/s</label>
-            <input type="text" name="ape" placeholder="Ej. Lopez Obrador" value="" required>
-            <br>
-            <label for="correo">Correo electrónico</label>
-            <input type="email" name="correo" placeholder="Entrada de correo" value="" required><br>
-            <label for="cel">Celular</label>
-            <input type="tel" name="cel" placeholder="Ej. 01162572195" required><br>
-            <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" placeholder="Ej. 01143221068"><br>
-            <label for="pais">Pasí de residencia</label>
-            <input type="text" name="pais" placeholder="Ej. Argentina" required><br>
-            <label for="prov">Provincia</label>
-            <input type="text" name="prov" placeholder="Ej. Rio Negro">
-            <label for="local">Ciudad</label>
-            <input type="text" name="local" placeholder="Ej. Bariloche">
-        </fieldset><br><br>
-            <label for="contacto">¿Cómo nos conoció?</label><br>
-            <input type="radio" name="contacto" id="op1" value="internet"><label for="op1">Internet</label><br>
-            <input type="radio" name="contacto" id="op2" value="nota"><label for="op2">Prensa o redes sociales</label><br>
-            <input type="radio" name="contacto" id="op3" value="prof"><label for="op3">A través de un profesional de la salud</label><br>
-            <input type="radio" name="contacto" id="op4" value="recom"><label for="op4">Me recomendó un amigo/conocido</label><br>
-            <input type="radio" name="contacto" id="op5" value="otro"><label for="op5">Otro</label><br><br>
-            <label for="coment">Consulta</label><br>
-            <textarea name="coment" id="comentario" cols="100" rows="10">Dejanos tu consulta</textarea><br>
-            <input type="submit" value="Enviar">
+    <div class="container">
+        <h3>Contacto</h3>
+        <p>Envianos tu consulta. Te responderemos a la brevedad con absoluta confidencialidad.</p>
+        <form class="form" action="form-result.php" method="post" enctype="multipart/form-data" id="contact">
+            <div class="row mb-3">
+                <label for="nom" class="col-sm-2 col-form-label">Nombre/s</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="nom" placeholder="Ej. Maria" value="" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="ape" class="col-sm-2 col-form-lable">Apellido/s</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="ape" placeholder="Ej. Fernandez" value="" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="correo" class="col-sm-2 col-form-lable">Correo electrónico</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="correo" placeholder="Entrada de correo" value="" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="cel" class="col-sm-2 col-form-lable">Celular</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" name="cel" placeholder="Ej. 01162572195" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="pais" class="col-sm-2 col-form-lable">Pasí de residencia</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="pais" placeholder="Ej. Argentina" required>
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-lable col-sm-6">¿Cómo nos conoció?</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contacto" id="op1" value="internet">
+                        <label class="form-check-lable" for="op1">Internet</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contacto" id="op2" value="prof">
+                        <label class="form-check-lable" for="op2">A través de un profesional de la salud</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contacto" id="op3" value="recom">
+                        <label class="form-check-lable" for="op3">Me recomendó un amigo/conocido</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contacto" id="op4" value="otro">
+                        <label class="form-check-lable" for="op4">Otro</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-floating">
+                <label for="coment">Consulta</label><br>
+                <textarea class="form-control" name="coment" id="comentario" cols="100" rows="10">Dejenos su consulta</textarea>
+            </div>
+            <input type="submit" class="btn" value="Enviar">
     </form>
+    </div>
     <br>
     <br>
     <!--En el footer van todos los logos de las entidades importantes y habilitantes para funcionar. Por lo tanto esto se conserva en todas las hojas-->
